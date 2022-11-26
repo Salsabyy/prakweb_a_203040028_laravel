@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ccbd816a07b206f971042295b899d1ba",
+    "content-hash": "9d1e120df6a4219142d38f1ce1d2002f",
     "packages": [
         {
             "name": "brick/math",
@@ -118,6 +118,153 @@
                     "homepage": "https://github.com/cfrutos"
                 },
                 {
+                    "name": "cocur/slugify",
+                    "version": "v4.2.0",
+                    "source": {
+                        "type": "git",
+                        "url": "https://github.com/cocur/slugify.git",
+                        "reference": "7e7d03067d1075b1147090b3e1df672dfffb9dc3"
+                    },
+                    "dist": {
+                        "type": "zip",
+                        "url": "https://api.github.com/repos/cocur/slugify/zipball/7e7d03067d1075b1147090b3e1df672dfffb9dc3",
+                        "reference": "7e7d03067d1075b1147090b3e1df672dfffb9dc3",
+                        "shasum": ""
+                    },
+                    "require": {
+                        "ext-mbstring": "*",
+                        "php": "^7.1 || ~8.0.0 || ~8.1.0"
+                    },
+                    "conflict": {
+                        "symfony/config": "<3.4 || >=4,<4.3",
+                        "symfony/dependency-injection": "<3.4 || >=4,<4.3",
+                        "symfony/http-kernel": "<3.4 || >=4,<4.3",
+                        "twig/twig": "<2.12.1"
+                    },
+                    "require-dev": {
+                        "laravel/framework": "^5.0|^6.0|^7.0|^8.0",
+                        "latte/latte": "~2.2",
+                        "league/container": "^2.2.0",
+                        "mikey179/vfsstream": "~1.6.8",
+                        "mockery/mockery": "^1.3",
+                        "nette/di": "~2.4",
+                        "pimple/pimple": "~1.1",
+                        "plumphp/plum": "~0.1",
+                        "symfony/config": "^3.4 || ^4.3 || ^5.0 || ^6.0",
+                        "symfony/dependency-injection": "^3.4 || ^4.3 || ^5.0 || ^6.0",
+                        "symfony/http-kernel": "^3.4 || ^4.3 || ^5.0 || ^6.0",
+                        "symfony/phpunit-bridge": "^5.4 || ^6.0",
+                        "twig/twig": "^2.12.1 || ~3.0",
+                        "zendframework/zend-modulemanager": "~2.2",
+                        "zendframework/zend-servicemanager": "~2.2",
+                        "zendframework/zend-view": "~2.2"
+                    },
+                    "type": "library",
+                    "autoload": {
+                        "psr-4": {
+                            "Cocur\\Slugify\\": "src"
+                        }
+                    },
+                    "notification-url": "https://packagist.org/downloads/",
+                    "license": [
+                        "MIT"
+                    ],
+                    "authors": [
+                        {
+                            "name": "Florian Eckerstorfer",
+                            "email": "florian@eckerstorfer.co",
+                            "homepage": "https://florian.ec"
+                        },
+                        {
+                            "name": "Ivo Bathke",
+                            "email": "ivo.bathke@gmail.com"
+                        }
+                    ],
+                    "description": "Converts a string into a slug.",
+                    "keywords": [
+                        "slug",
+                        "slugify"
+                    ],
+                    "support": {
+                        "issues": "https://github.com/cocur/slugify/issues",
+                        "source": "https://github.com/cocur/slugify/tree/v4.2.0"
+                    },
+                    "time": "2022-08-13T15:23:32+00:00"
+                },
+                {
+                    "name": "cviebrock/eloquent-sluggable",
+                    "version": "8.0.8",
+                    "source": {
+                        "type": "git",
+                        "url": "https://github.com/cviebrock/eloquent-sluggable.git",
+                        "reference": "16e21db24d80180f870c3c7c4faf3d3af23f4117"
+                    },
+                    "dist": {
+                        "type": "zip",
+                        "url": "https://api.github.com/repos/cviebrock/eloquent-sluggable/zipball/16e21db24d80180f870c3c7c4faf3d3af23f4117",
+                        "reference": "16e21db24d80180f870c3c7c4faf3d3af23f4117",
+                        "shasum": ""
+                    },
+                    "require": {
+                        "cocur/slugify": "^4.0",
+                        "illuminate/config": "^8.0",
+                        "illuminate/database": "^8.0",
+                        "illuminate/support": "^8.0",
+                        "php": "^7.3|^8.0"
+                    },
+                    "require-dev": {
+                        "limedeck/phpunit-detailed-printer": "^6.0",
+                        "mockery/mockery": "^1.4.2",
+                        "orchestra/database": "^6.0",
+                        "orchestra/testbench": "^6.0",
+                        "phpunit/phpunit": "^9.4"
+                    },
+                    "type": "library",
+                    "extra": {
+                        "laravel": {
+                            "providers": [
+                                "Cviebrock\\EloquentSluggable\\ServiceProvider"
+                            ]
+                        }
+                    },
+                    "autoload": {
+                        "psr-4": {
+                            "Cviebrock\\EloquentSluggable\\": "src"
+                        }
+                    },
+                    "notification-url": "https://packagist.org/downloads/",
+                    "license": [
+                        "MIT"
+                    ],
+                    "authors": [
+                        {
+                            "name": "Colin Viebrock",
+                            "email": "colin@viebrock.ca"
+                        }
+                    ],
+                    "description": "Easy creation of slugs for your Eloquent models in Laravel",
+                    "homepage": "https://github.com/cviebrock/eloquent-sluggable",
+                    "keywords": [
+                        "eloquent",
+                        "eloquent-sluggable",
+                        "laravel",
+                        "lumen",
+                        "slug",
+                        "sluggable"
+                    ],
+                    "support": {
+                        "issues": "https://github.com/cviebrock/eloquent-sluggable/issues",
+                        "source": "https://github.com/cviebrock/eloquent-sluggable/tree/8.0.8"
+                    },
+                    "funding": [
+                        {
+                            "url": "https://github.com/cviebrock",
+                            "type": "github"
+                        }
+                    ],
+                    "time": "2021-06-12T01:05:33+00:00"
+                },
+                {
                     "name": "Colin O'Dell",
                     "email": "colinodell@gmail.com",
                     "homepage": "https://www.colinodell.com"
@@ -139,20 +286,23 @@
         },
         {
             "name": "doctrine/inflector",
-            "version": "2.0.5",
+            "version": "v3.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/inflector.git",
-                "reference": "ade2b3bbfb776f27f0558e26eed43b5d9fe1b392"
+                "reference": "f41715465d65213d644d3141a6a93081be5d3549"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/inflector/zipball/ade2b3bbfb776f27f0558e26eed43b5d9fe1b392",
-                "reference": "ade2b3bbfb776f27f0558e26eed43b5d9fe1b392",
+                "url": "https://api.github.com/repos/dflydev/dflydev-dot-access-data/zipball/f41715465d65213d644d3141a6a93081be5d3549",
+                "reference": "f41715465d65213d644d3141a6a93081be5d3549",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.2 || ^8.0"
+                "phpunit/phpunit": "^7.5 || ^8.5 || ^9.3",
+                "scrutinizer/ocular": "1.6.0",
+                "squizlabs/php_codesniffer": "^3.5",
+                "vimeo/psalm": "^4.0.0"
             },
             "require-dev": {
                 "doctrine/coding-standard": "^9",
@@ -210,7 +360,8 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/inflector/issues",
-                "source": "https://github.com/doctrine/inflector/tree/2.0.5"
+                "source": "https://github.com/dflydev/dflydev-dot-access-data/tree/v3.0.2"
+      
             },
             "funding": [
                 {
@@ -226,27 +377,27 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-09-07T09:01:28+00:00"
+            "time": "2022-10-27T11:44:00+00:00"
         },
         {
             "name": "doctrine/lexer",
-            "version": "1.2.3",
+            "version": "2.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/lexer.git",
-                "reference": "c268e882d4dbdd85e36e4ad69e02dc284f89d229"
+                "reference": "d9d313a36c872fd6ee06d9a6cbcf713eaa40f024"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/lexer/zipball/c268e882d4dbdd85e36e4ad69e02dc284f89d229",
-                "reference": "c268e882d4dbdd85e36e4ad69e02dc284f89d229",
+                "url": "https://api.github.com/repos/doctrine/inflector/zipball/d9d313a36c872fd6ee06d9a6cbcf713eaa40f024",
+                "reference": "d9d313a36c872fd6ee06d9a6cbcf713eaa40f024",
                 "shasum": ""
             },
             "require": {
                 "php": "^7.1 || ^8.0"
             },
             "require-dev": {
-                "doctrine/coding-standard": "^9.0",
+                "doctrine/coding-standard": "^10",
                 "phpstan/phpstan": "^1.3",
                 "phpunit/phpunit": "^7.5 || ^8.5 || ^9.5",
                 "vimeo/psalm": "^4.11"
@@ -286,7 +437,7 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/lexer/issues",
-                "source": "https://github.com/doctrine/lexer/tree/1.2.3"
+                "source": "https://github.com/doctrine/inflector/tree/2.0.6"
             },
             "funding": [
                 {
@@ -302,7 +453,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-02-28T11:07:21+00:00"
+            "time": "2022-10-20T09:10:12+00:00"
         },
         {
             "name": "dragonmantank/cron-expression",
@@ -780,16 +931,16 @@
         },
         {
             "name": "guzzlehttp/psr7",
-            "version": "2.4.1",
+            "version": "2.4.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/psr7.git",
-                "reference": "69568e4293f4fa993f3b0e51c9723e1e17c41379"
+                "reference": "67c26b443f348a51926030c83481b85718457d3d"   
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/psr7/zipball/69568e4293f4fa993f3b0e51c9723e1e17c41379",
-                "reference": "69568e4293f4fa993f3b0e51c9723e1e17c41379",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/67c26b443f348a51926030c83481b85718457d3d",
+                "reference": "67c26b443f348a51926030c83481b85718457d3d",
                 "shasum": ""
             },
             "require": {
@@ -879,7 +1030,7 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/psr7/issues",
-                "source": "https://github.com/guzzle/psr7/tree/2.4.1"
+                "source": "https://github.com/guzzle/psr7/tree/2.4.3"   
             },
             "funding": [
                 {
@@ -895,20 +1046,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-08-28T14:45:39+00:00"
+            "time": "2022-10-26T14:07:24+00:00"
         },
         {
             "name": "laravel/framework",
-            "version": "v9.35.1",
+            "version": "v5.1.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "79aed20f54b6ab75f926bf7d0dd7a5043ceb774a"
+                "reference": "a790200347f0c6d07e2fca252ccb446df87520c6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/79aed20f54b6ab75f926bf7d0dd7a5043ceb774a",
-                "reference": "79aed20f54b6ab75f926bf7d0dd7a5043ceb774a",
+                "url": "https://api.github.com/repos/itsgoingd/clockwork/zipball/a790200347f0c6d07e2fca252ccb446df87520c6",
+                "reference": "a790200347f0c6d07e2fca252ccb446df87520c6",
                 "shasum": ""
             },
             "require": {
@@ -1079,22 +1230,22 @@
             ],
             "support": {
                 "issues": "https://github.com/laravel/framework/issues",
-                "source": "https://github.com/laravel/framework"
+                "source": "https://github.com/itsgoingd/clockwork/tree/v5.1.11"
             },
-            "time": "2022-10-11T17:30:47+00:00"
+            "time": "2022-11-02T21:11:04+00:00"
         },
         {
             "name": "laravel/sanctum",
-            "version": "v3.0.1",
+            "version": "v8.83.26",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/sanctum.git",
-                "reference": "b71e80a3a8e8029e2ec8c1aa814b999609ce16dc"
+                "reference": "7411d9fa71c1b0fd73a33e225f14512b74e6c81e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/sanctum/zipball/b71e80a3a8e8029e2ec8c1aa814b999609ce16dc",
-                "reference": "b71e80a3a8e8029e2ec8c1aa814b999609ce16dc",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/7411d9fa71c1b0fd73a33e225f14512b74e6c81e",
+                "reference": "7411d9fa71c1b0fd73a33e225f14512b74e6c81e",
                 "shasum": ""
             },
             "require": {
@@ -1146,20 +1297,20 @@
                 "issues": "https://github.com/laravel/sanctum/issues",
                 "source": "https://github.com/laravel/sanctum"
             },
-            "time": "2022-07-29T21:33:30+00:00"
+            "time": "2022-11-01T14:48:50+00:00"
         },
         {
             "name": "laravel/serializable-closure",
-            "version": "v1.2.2",
+            "version": "v2.7.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/serializable-closure.git",
-                "reference": "47afb7fae28ed29057fdca37e16a84f90cc62fae"
+                "reference": "5062061b4924af3392225dd482ca7b4d85d8b8ef"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/serializable-closure/zipball/47afb7fae28ed29057fdca37e16a84f90cc62fae",
-                "reference": "47afb7fae28ed29057fdca37e16a84f90cc62fae",
+                "url": "https://api.github.com/repos/laravel/tinker/zipball/5062061b4924af3392225dd482ca7b4d85d8b8ef",
+                "reference": "5062061b4924af3392225dd482ca7b4d85d8b8ef",
                 "shasum": ""
             },
             "require": {
@@ -1189,7 +1340,7 @@
             "authors": [
                 {
                     "name": "Taylor Otwell",
-                    "email": "taylor@laravel.com"
+                      "email": "taylor@laravel.com"
                 },
                 {
                     "name": "Nuno Maduro",
@@ -1204,29 +1355,29 @@
             ],
             "support": {
                 "issues": "https://github.com/laravel/serializable-closure/issues",
-                "source": "https://github.com/laravel/serializable-closure"
+                "source": "https://github.com/laravel/tinker/tree/v2.7.3"    
             },
-            "time": "2022-09-08T13:45:54+00:00"
+            "time": "2022-11-09T15:11:38+00:00"
         },
         {
             "name": "laravel/tinker",
-            "version": "v2.7.2",
+            "version": "2.3.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/tinker.git",
-                "reference": "dff39b661e827dae6e092412f976658df82dbac5"
+                "reference": "a36bd2be4f5387c0f3a8792a0d76b7d68865abbf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/tinker/zipball/dff39b661e827dae6e092412f976658df82dbac5",
-                "reference": "dff39b661e827dae6e092412f976658df82dbac5",
+                "url": "https://api.github.com/repos/thephpleague/commonmark/zipball/a36bd2be4f5387c0f3a8792a0d76b7d68865abbf",
+                "reference": "a36bd2be4f5387c0f3a8792a0d76b7d68865abbf",  
                 "shasum": ""
             },
             "require": {
                 "illuminate/console": "^6.0|^7.0|^8.0|^9.0",
                 "illuminate/contracts": "^6.0|^7.0|^8.0|^9.0",
                 "illuminate/support": "^6.0|^7.0|^8.0|^9.0",
-                "php": "^7.2.5|^8.0",
+                "michelf/php-markdown": "^1.4 || ^2.0",
                 "psy/psysh": "^0.10.4|^0.11.1",
                 "symfony/var-dumper": "^4.3.4|^5.0|^6.0"
             },
@@ -1274,7 +1425,7 @@
                 "issues": "https://github.com/laravel/tinker/issues",
                 "source": "https://github.com/laravel/tinker/tree/v2.7.2"
             },
-            "time": "2022-03-23T12:38:24+00:00"
+            "time": "2022-11-03T17:29:46+00:00"
         },
         {
             "name": "league/commonmark",
