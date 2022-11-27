@@ -50,12 +50,8 @@
             <div class="col-md-4">
                 <div class="card mb-3">
                     <a class="text-decoration-none text-white position-absolute px-3 py-2" style="background-color: rgba(0,0,0,0.7);" href="/posts?category={{$post->category->slug}}">{{$post->category->name}}</a>
-                    @if ($post->image)
-                    <img src="{{ asset('storage/'. $post->image) }}" alt="{{ $post->category->name }}" class="img-fluid">
-                  @else
-                    <img src="https://source.unsplash.com/500x400?{{ $post->category->name }}" class="card-img-top" alt="{{ $post->category->name }}">
-                  @endif
-                  <div class="card-body">      
+                    <img class="card-img-top" src="https://source.unsplash.com/500x400?{{$post->category->name}}" alt="{{$post->category->name}}">
+                    <div class="card-body">
                         
                       <h5 class="card-title"><a class="text-decoration-none text-dark" href="/posts/{{$post->slug}}">{{$post->title}}</a></h5>
                       <p><small class="text-muted">
